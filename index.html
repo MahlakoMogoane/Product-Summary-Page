@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!--adding external fonts from google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+    .product{
+      background-color: hsl(30, 38%, 92%);
+      font-family: 'monteserrat',serif;
+      color: grey;
+    }
+
+    #name{
+      font-size: 30px;
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      color: black;
+    }
+
+    div{
+      float:right;
+    }
+
+    #category{
+      font-weight: 500;
+      padding-bottom:20px;
+      text-transform: uppercase;
+    }
+
+    #describe{
+      font-weight: 700;
+    }
+
+    #product{
+      max-width: 100%;
+    }
+
+    #curr-price{
+      font-family: 'Fraunces', serif;
+      font-size: 35px;
+      font-weight: 700;
+      color: hsl(158, 36%, 37%);
+    }
+
+    #old-price{
+      font-size: 17px;
+      font-family: Montserrat, serif;
+      color: grey;
+      display: inline;
+      text-decoration: line-through;
+    }
+
+    button{
+      background-color: hsl(158, 36%, 37%);
+      color: white;
+      height: 50px;
+      width: 50%;
+      border: none;
+      border-radius: 10px;
+    }
+
+    button:hover{
+      background-color: hsl(212, 21%, 14%);
+    }
+
+    @media only screen
+      and (max-width: 375px){
+        #product{
+          width: 100vw;
+        }
+      }
+
+      @media only screen
+      and (min-width: 375px) and (max-width: 1440px){
+        #product{
+          width: 100vw;
+        }
+
+        div{
+          float:left;
+        }
+      }
+    
+
+  </style>
+</head>
+
+<body>
+<section class="product">
+  <img id="product" src="C:\Users\Mahlako\OneDrive\Documents\school\side projects\frontend mentor\product-preview-card-component-main\images\image-product-desktop.jpg">
+
+  <div class="prod">
+    <p id="category">Perfume</p><br>
+
+    <p id="name">Gabrielle Essence Eau De Parfum</p> <br>
+
+    <p id="describe">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+    Perfumer-Creator for the House of CHANEL.</p><br>
+
+    <p id="curr-price">$149.99 <span id= "old-price">$169.99</span></p>
+
+    <button type="button"><img src="C:\Users\Mahlako\OneDrive\Documents\school\side projects\frontend mentor\product-preview-card-component-main\images\icon-cart.svg"> Add to Cart</button>
+  </div>
+  
+</section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mahlako Mogoane</a>.
+  </div>
+</body>
+</html>
