@@ -69,4 +69,3 @@ I definitely plan on learning more about media queries as this project was essen
 ## Author
 
 - Github - [Mahlako Mogoane](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
